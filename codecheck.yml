@@ -1,0 +1,3 @@
+env:
+  APP_COMMAND: python cli.py
+test: mocha
