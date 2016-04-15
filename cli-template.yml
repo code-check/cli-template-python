@@ -1,0 +1,9 @@
+# build:
+#   - pip install -r requirements.txt
+files:
+  - .gitignore
+  - cli.py
+  - app/app.py
+  - app/__init__.py
+  - requirements.txt
+command: python cli.py
