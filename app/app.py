@@ -1,4 +1,5 @@
 
 def main(args, options):
-  for v in args:
-    print(v)
+  for arg in args:
+    result = do_something(arg)
+    print(result)
