@@ -17,7 +17,7 @@ All input arguments are passed into `args` as an array.
 If you want to use optional arguments, add them using `argparse`'s `parser.add_argument` in [cli.py](cli.py)
 
 ## Outputting Results
-Use the `print` method to return results to stdout.
+Use the standard `print()` method to output results to stdout.
 
 ``` python
   print(result)

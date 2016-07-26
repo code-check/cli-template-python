@@ -1,5 +1,6 @@
 
 def main(args, options):
   for arg in args:
-    result = do_something(arg)
+    # Replace below line with your code.
+    result = arg
     print(result)
