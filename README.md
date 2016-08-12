@@ -1,29 +1,36 @@
-# CLI App Template for Python
+# CLI Applications with Python
 
-This is a template for creating CLI applications in Python.
+Here's how to build your codecheck challenge solution as a CLI application.  
 
-You can build your console application in [app/app.py](app/app.py)
+## Requirements
 
-This template uses the `argparse` module. (For details see the [official documentation](https://docs.python.org/2.7/library/argparse.html).)
+- Python2 (For the version see our [docs](https://code-check.github.io/docs/en/reference_users/#serverside-language-and-tool-versions) .)
+- The standard library's [`argparse`](https://docs.python.org/2.7/library/argparse.html) module
 
-## Recieving Inputs
-In [app.py](app/app.py) is a function called `main`:
+## Recieve Inputs
+
+In [app/app.py](app/app.py) is a function called `main`.
+Build your console application there.  
 
 ``` python
 def main(args, options):
+  for arg in args:
+    # Replace below line with your code.
+    result = arg
 ```
 
-All input arguments are passed into `args` as an array.  
+All `stdin` input arguments are passed into `args` as an array.  
+
 If you want to use optional arguments, add them using `argparse`'s `parser.add_argument` in [cli.py](cli.py)
 
-## Outputting Results
-Use the standard `print()` method to output results to stdout.
+## Output Results
+Use the standard `print()` method to output results to `stdout`.
 
 ``` python
   print(result)
 ```
 
-## Installing External Libraries
+## Install External Libraries
 If you want to use external libraries, do the following:
 
 - Write the library name and version in [requirements.txt](requirements.txt)

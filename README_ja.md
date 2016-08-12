@@ -1,31 +1,37 @@
-# CLIアプリケーション作成用テンプレート(Python)
+# CLIアプリケーション作成方法 (Python)
 
-PythonでCLIアプリケーションを作成するためのテンプレートです。
+codecheckチャレンジの解答をCLIアプリケーションとして作成する方法を教えるよ。
 
-[app/app.py](app/app.py)を編集することでCLIアプリケーションを作成することができます。
+## 必須条件
 
-このテンプレートではCLI作成のユーティリティとして、`argparse`を使用しています。  
-（詳細は[公式ドキュメント](https://docs.python.org/2.7/library/argparse.html)をごらんください。）
+- Python2（詳しいバージョンについては[ドキュ](https://code-check.github.io/docs/ja/reference_users/#serverside-language-and-tool-versions)を見てね。)
+- 標準ライブラリの[`argparse`](http://docs.python.jp/2.7/library/argparse.html)モジュール
 
 ## 引数の取得
-[app.py](app/app.py)では`main`という関数が定義されています。
+[app.py](app/app.py)では`main`という関数が定義されてる。  
+この関数を編集することでCLIアプリケーションが作成できるぞ。  
 
 ``` python
 def main(args, options):
+  for arg in args:
+    # 以下の行を自分のコードと置換してね。
+    result = arg
 ```
 
-コマンドライン引数は`args`に配列として渡されます。  
-オプション形式の引数を使用する場合はargparseの`parser.add_argument`にoption引数を追加してください。([cli.py](cli.py))
+コマンドライン引数は`args`に配列として渡される。  
+
+
+オプション形式の引数を使用する場合は[cli.py](cli.py)内で`argparse`の`parser.add_argument`でオプション引数を追加できるよ。
 
 ## 結果の出力
-コマンド実行結果の標準出力への出力は標準の`print`メソッドを使用してください。
+`stdout`への出力は標準の`print()`メソッドを使用してね。
 
 ``` python
   print(result)
 ```
 
 ## 外部ライブラリの追加方法
-外部ライブラリを使用する場合は以下の手順でおこなってください。
+外部ライブラリを使用する場合は以下の手順で実施してね。
 
 - [requirements.txt](requirements.txt)にライブラリ名とバージョンを記述
 - [codecheck.yml](codecheck.yml)に以下の内容を追加：
