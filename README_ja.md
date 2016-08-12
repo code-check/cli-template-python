@@ -20,7 +20,6 @@ def main(args, options):
 
 コマンドライン引数は`args`に配列として渡される。  
 
-
 オプション形式の引数を使用する場合は[cli.py](cli.py)内で`argparse`の`parser.add_argument`でオプション引数を追加できるよ。
 
 ## 結果の出力
