@@ -6,4 +6,5 @@ files:
   - app/app.py
   - app/__init__.py
   - requirements.txt
+main: app/app.py
 command: python cli.py
