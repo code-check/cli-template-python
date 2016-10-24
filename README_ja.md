@@ -1,36 +1,28 @@
-# CLIアプリケーション作成方法 (Python)
+# コマンドラインアプリケーション(CLI アプリ)作成用テンプレート(Python2.x)
 
-codecheckチャレンジの解答をCLIアプリケーションとして作成する方法を教えるよ。
+[main.py](app/main.py)を編集して、CLIアプリを実装してください。  
+チャレンジ内でファイルの作成が許可されていれば、可読性等のためにファイルを分割する事も可能です。
 
-## 必須条件
-
-- Python2（詳しいバージョンについては[ドキュ](https://code-check.github.io/docs/ja/reference_users/#serverside-language-and-tool-versions)を見てね。)
-- 標準ライブラリの[`argparse`](http://docs.python.jp/2.7/library/argparse.html)モジュール
-
-## 引数の取得
-[app.py](app/app.py)では`main`という関数が定義されてる。  
-この関数を編集することでCLIアプリケーションが作成できるぞ。  
+## コマンドライン引数の取得方法
+[main.py](app/main.py)内で定義されている、`main`という関数から、 `argv` の名前で取得可能です。  
 
 ``` python
-def main(args, options):
-  for arg in args:
-    # 以下の行を自分のコードと置換してね。
-    result = arg
+def main(argv):
+    # code to run
 ```
 
 コマンドライン引数は`args`に配列として渡される。  
 
-オプション形式の引数を使用する場合は[cli.py](cli.py)内で`argparse`の`parser.add_argument`でオプション引数を追加できるよ。
 
-## 結果の出力
-`stdout`への出力は標準の`print()`メソッドを使用してね。
+## コマンド実行結果の標準出力への出力
+`stdout`への出力は標準の`print`メソッドが使用可能です。
 
 ``` python
-  print(result)
+print(result)
 ```
 
 ## 外部ライブラリの追加方法
-外部ライブラリを使用する場合は以下の手順で実施してね。
+外部ライブラリを使用する場合は以下の手順で実施してください。
 
 - [requirements.txt](requirements.txt)にライブラリ名とバージョンを記述
 - [codecheck.yml](codecheck.yml)に以下の内容を追加：

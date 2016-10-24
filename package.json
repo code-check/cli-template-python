@@ -7,19 +7,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/code-check/cli-template-ruby.git"
+    "url": "git+https://github.com/code-check/cli-template-python.git"
   },
   "keywords": [
     "codecheck",
     "cli",
-    "ruby"
+    "python"
   ],
   "author": "Givery Inc.",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/code-check/cli-template-ruby/issues"
+    "url": "https://github.com/code-check/cli-template-python/issues"
   },
-  "homepage": "https://github.com/code-check/cli-template-ruby#README.md",
+  "homepage": "https://github.com/code-check/cli-template-python#README.md",
   "devDependencies": {
     "chai": "^3.5.0",
     "codecheck": "^0.5.3"
