@@ -11,7 +11,7 @@ def main(argv):
     # code to run
 ```
 
-コマンドライン引数は`args`に配列として渡される。  
+ここでの `argv` は [index.py](index.py) から渡されるもので、`sys.argv` の内容がそのまま入ります。
 
 
 ## コマンド実行結果の標準出力への出力
