@@ -6,5 +6,5 @@ files:
   - index.py
   - app/main.py
   - app/__init__.py
-main: app/app.py
-command: python cli.py
+main: app/main.py
+command: python index.py
