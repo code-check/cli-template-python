@@ -11,7 +11,7 @@ def main(argv):
     # code to run
 ```
 
-ここでの `argv` は [index.py](index.py) から渡されるもので、`sys.argv` の内容がそのまま入ります。
+ここでの `argv` は [index.py](index.py) から渡されるもので、`sys.argv` の内容からスクリプト名の情報を抜いたデータが入ります。
 
 
 ## コマンド実行結果の標準出力への出力
@@ -25,9 +25,3 @@ print(result)
 外部ライブラリを使用する場合は以下の手順で実施してください。
 
 - [requirements.txt](requirements.txt)にライブラリ名とバージョンを記述
-- [codecheck.yml](codecheck.yml)に以下の内容を追加：
-
-``` yaml
-build:
-  - pip install -r requirements.txt
-```

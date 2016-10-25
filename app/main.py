@@ -1,4 +1,4 @@
 #!/usr/bin/env python
 def main(argv):
-  for arg in argv[1:]:
-    print(arg)
+  for v in argv:
+    print(v)
