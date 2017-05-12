@@ -1,8 +1,8 @@
 [
   { "it": "hoge ->-> hoge",
-    "input": ["hoge"], "output": ["hoge"]},
+    "input": ["hoge"], "output": ["argv[0]: hoge"]},
   { "it": "hoge, fuga ->-> hoge, fuga",
-    "input": ["hoge", "fuga"], "output": ["hoge", "fuga"]},
+    "input": ["hoge", "fuga"], "output": ["argv[0]: hoge", "argv[1]: fuga"]},
   { "it": "hoge fuga ->-> hoge fuga",
-    "input": ["hoge fuga"], "output": ["hoge fuga"]}
+    "input": ["hoge fuga"], "output": ["argv[0]: hoge fuga"]}
 ]
