@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-def main(argv, options):
+def main(argv):
   # このコードは引数と標準出力を用いたサンプルコードです。
   # このコードは好きなように編集・削除してもらって構いません。
   # ---
