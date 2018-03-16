@@ -1,10 +1,10 @@
 build:
   - pip install -r requirements.txt
 files:
-  - .gitignore
   - requirements.txt
-  - index.py
-  - app/main.py
-  - app/__init__.py
-main: app/main.py
-command: python index.py
+  - main.py
+main: main.py
+command: python main.py
+envConf:
+  imageName: "givery/track-python-2.7"
+  cacheDirs: ["/usr/local/lib/python2.7"]
